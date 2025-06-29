@@ -56,14 +56,9 @@ export default function App() {
           <Tree name="neighborhood @ hack club">
             <Tree name="CROSSWARD">
               <Tree name="desc">
-                <div
-                style={{
-                  position: 'relative',
-                  width: '100%',
-                  padding: 10,
-                }}>
+                <s.PlainText>
                     CROSSWARD is a roguelike crossword based game <br /> I made for neighborhood @ hack club 2025.
-                </div>
+                </s.PlainText>
               </Tree>
               <Tree name="project">
                 <a href="https://miniaturity.github.io" target="_blank" rel="noopener noreferrer" style={{ verticalAlign: "middle"}}>Crossward</a>

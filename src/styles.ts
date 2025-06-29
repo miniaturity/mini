@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { animated } from '@react-spring/web'
+import { breakpoints } from './breakpoints'
 
 export const TreeContainer = styled('div')`
   width: 100%;
@@ -58,7 +59,11 @@ export const MainTitle = styled('div')`
   align-items: center;
   justify-content: center;
   vertical-align: middle;
-  font-size: 2rem;
+  font-size: 36px;
+  ${breakpoints("font-size", "px", [
+    { 1200: 32 },
+    { 800: 20 },
+  ])}
   color: black;
   width: 50%;
 `
@@ -76,6 +81,20 @@ export const SubTitle = styled('div')`
   justify-content: center;
   vertical-align: middle;
   font-size: 0.9rem;
+  ${breakpoints("font-size", "rem", [
+    { 1200: 0.9 },
+    { 800: 0.6 },
+  ])}
   color: #bbb;
   width: 50%;
+`
+
+export const PlainText = styled('div')`
+  padding: 10px;
+  line-height: normal;
+  font-size: 14px;
+  ${breakpoints("font-size", "px", [
+    { 1200: 14 },
+    { 800: 10 },
+  ])}
 `
